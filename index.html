@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="fade-in">
+        <h1>My Portfolio</h1>
+        <div class="about-content">
+            <img src="./20191018_232000.png" alt="My photo" class="profile-image">
+            <p>My name is [Your Name], and I am a passionate web developer. I specialize in front-end development, crafting visually appealing and user-friendly websites.</p>
+        </div>
+        <div class="social-links">
+            <a href="https://facebook.com" class="social-icon"><i class="fab fa-facebook-f"> facebook</i></a>
+            <a href="https://twitter.com" class="social-icon"><i class="fab fa-twitter">twitter</i></a>
+            <a href="https://linkedin.com" class="social-icon"><i class="fab fa-linkedin-in">linkedin</i></a>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project" data-project="1">
+                <img src="project1.jpg" alt="Project 1" class="project-image">
+                <h3>Project 1</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <div class="project" data-project="2">
+                <img src="project2.jpg" alt="Project 2" class="project-image">
+                <h3>Project 2</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="blog" class="fade-in">
+        <h2>Blog</h2>
+        <div class="blog-post">
+            <h3>How to Build a Responsive Website</h3>
+            <p>This post will help you understand how to create a fully responsive website using HTML, CSS, and JavaScript...</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        <!-- Add more blog posts as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for Project Details -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Project Details</h3>
+            <p id="modal-description">Full details of the project will go here.</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+</html>
